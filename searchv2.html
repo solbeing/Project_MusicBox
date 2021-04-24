@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>MusicBox Search</title>
+    <link rel="styleSheet" href="base.css" />
+</head>
+<style>
+    body{
+        background: #CBDCF7;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header{
+        display:flex;
+        align-items: center;
+
+    }
+    .header div:nth-child(1){
+        width: 30%;
+    }
+    .header div:nth-child(2){
+        width: 70%;
+    }
+    .saerch-keyword{
+        width: 60%;
+    }
+    .search-btn{
+        font-size: 1.3rem;
+        border: none;
+        padding: 10px;
+        margin-top:20px;
+        width: 150px;
+        background-color: #307af0;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        transition: background-color .1s ease-in-out;
+    }
+    .search-btn:hover{
+        font-size: 1.3rem;
+        border: none;
+        padding: 10px;
+        width: 150px;
+        background-color: #265cb4;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .search-keyword{
+        padding: 10px;
+        font-size: 1.2rem;
+        transition: border-color .15s ease-in-out,
+                    box-shadow .15s ease-in-out;
+        width: 60%;
+    }
+    .search-keyword:focus{
+        color: #495057;
+        background-color: #fff;
+        border-color: #307af0;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    }
+</style>
+<body>
+    <div class="container">
+        <dvi class="content-wrap">
+            <div class="header">
+                <div class="banner">
+                    <h1 >MusicBox🎶</h1>
+                </div>
+                <div clsss="search-box">
+                    <input type="text" id="searchKeyword" class="search-keyword" name="search_keyword" placeholder="키워드를 입력해주세요"/>
+                    <button type="button" class="search-btn">검색</button>
+                </div>
+            </div>
+            <div class="content">
+                <div>검색 결과입니다 (0)</div>
+                <table>
+                    <colgroup>
+                        
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="headChk" value="all" />
+                            </th>
+                            <th>No</th>
+                            <th></th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dvi>
+    </div>
+</body>
