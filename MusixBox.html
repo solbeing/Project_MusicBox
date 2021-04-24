@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>MusicBox</title>
+        <link rel="styleSheet" href="base.css" />
+    </head>
+<style>
+    body {
+        background: #CBDCF7;
+    }
+    h1{
+        color:#307af0;
+        font-size: 90px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .content-wrap{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .link_join{
+        text-align: right;
+    }
+    .link_join a{
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color:#000;
+    }
+    .link_join a:hover{
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color:#307af0;
+        transition: color .1s ease-in-out;
+    }
+    .login-form{
+        width: 415px;
+    }
+    .login-form div{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .form-input-box{
+        margin-bottom: 7px;
+    }
+    .login-form input{
+        padding: 10px;
+        font-size: 1.2rem;
+        transition: border-color .15s ease-in-out,
+                    box-shadow .15s ease-in-out;
+        width: 100%;
+    }
+    .login-form input:focus{
+        color: #495057;
+        background-color: #fff;
+        border-color: #307af0;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    }
+    .submit-btn{
+        font-size: 1.3rem;
+        border: none;
+        padding: 10px;
+        margin-top:20px;
+        width: 100%;
+        background-color: #307af0;
+        margin-bottom: 30px;
+        color: white;
+        cursor: pointer;
+        transition: background-color .1s ease-in-out;
+    }
+    .submit-btn:hover{
+        font-size: 1.3rem;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        background-color: #265cb4;
+        margin-bottom: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .find-account-wrap div{
+        display:inline-block;
+        font-size: 1.1rem;
+        font-weight: bold;        
+    }
+
+</style>
+    <body> 
+        <div class="content-wrap">
+            <h1 >MusicBox🎶</h1>
+            <form mehtod="post" onsubmit="">
+                <div class="login-form">                
+                    <div class="link_join">
+                        <a href="join.html">👤회원가입</a>
+                    </div>
+                    <div>
+                        <input type="text" name="email" class="form-input-box" placeholder="아이디">
+                        <input type="password" name="password" placeholder="비밀번호">
+                    </div>                        
+                    <div>
+                        <button type="submit" id="formBtn" class="submit-btn">로그인</button>
+                    </div>                
+                </div>
+            </form>
+
+            <div class="find-account-wrap">
+                <div style="margin-right: 30px;">
+                    <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+                    <label for="keepLogin" class="lab_g">로그인 상태 유지</label>
+                </div>
+                <div class="txt_find">
+                    🔒<a href=# class="link_find">아이디</a>
+                    / 
+                    <a href=# class="link_find">비밀번호 찾기</a>
+                </div>
+            </div>
+        </div>   
+    </body>
+    
+  
+  
+</html>
